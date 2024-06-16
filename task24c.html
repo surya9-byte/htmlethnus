@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            border: solid black;
+            margin-top: 150px;
+            margin-left: 150px;
+            margin-right: 800px;
+            padding-bottom: 100px;
+        }
+        .g{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 50px;
+            height: 50px;
+            border-style: none;
+            margin-bottom: 10px;
+            background-color: rgb(67, 164, 67);
+        }
+        .g:hover span,b:hover span,r:hover span,gr:hover span{
+            display: none;
+        }
+        .g:hover:after,.b:hover:after,.r:hover:after,.gr:hover:after{
+            content: "hover";
+            background-color: white;
+        }
+        .b{
+            width: 50px;
+            height: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 10px;
+            border-style: none;
+            background-color: blue;
+        }
+        .r{
+            width: 50px;
+            height: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 10px;
+            border-style: none;
+            background-color: red;
+        }
+        .gr{
+            width: 50px;
+            height: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 10px;
+            border-style: none;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <button class="g"></button><br>
+            <button class="b"></button><br>
+            <button class="r"></button><br>
+            <button class="gr"></button><br>
+        </div>
+        <div>
+            <h1>Hoverable Sidenav Buttons</h1>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+        </div>
+
+</body></html>

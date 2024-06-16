@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        input{
+            display: block;
+        }
+        .p{
+            margin-bottom: 30px;
+        }
+        .full{
+            width: 400px;
+            margin-left: 500px;
+            margin-top: 20px;
+        }
+        .u,.p,.b{
+            width:100%;
+            padding: 6px 0px;
+        }
+        .c{
+            padding: 10px;
+        }
+        .bar{
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            background-color:rgb(206, 203, 203);
+            width: 102%;
+        }
+        .pass{
+            margin-left: 30px;
+        }
+        .cancel{
+            margin-top: 5px;
+        }
+        span{
+            position: relative;
+            left: 380px;
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <p style='font-size:20px;margin-top:20px;margin-left: 380px;'>&#8599;</p>
+        <img src="Screenshot (495).png" style="margin-left: 90px;">
+        <div class="text">
+            <p>Username:</p>
+            <input class="u" type="text" id="username" placeholder="Enter username">
+            <p>Password:</p>
+            <input class="p" type="password" id="password" placeholder="Enter password">
+            <input class="b" type="button" value="Login" style="background-color:green; color: white; border: none;">
+            <p style="display: inline-block;"><input type="checkbox" style="display: inline-block;">Remember me</p>
+        </div>
+        <div class="bar">
+        <div class="cancel">
+            <input class="c" type="button" value="Cancel" style="margin-left: 2px; display: inline-block; background-color: red; color: white;border: none;border-radius: 5px;">
+        </div>
+        <div class="pass"> 
+            <p style="text-align:right; display: inline-block;">Forgot</p>
+            <a href="#" target="_blank" >passsword?</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
